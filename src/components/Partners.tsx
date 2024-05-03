@@ -18,8 +18,8 @@ function Partners() {
             <a key={partner.id} href="#" className="flex justify-center items-center">
               <Image
                 src={partner.image}
-                width={100}
-                height={100}
+                width={150}
+                height={150}
                 alt={partner.alt}
               />
             </a>

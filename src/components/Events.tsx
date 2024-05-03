@@ -1,6 +1,7 @@
 import React from 'react';
 import { cardData } from '../../constant/index';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 interface CardProps {
@@ -16,8 +17,14 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imageSrc, title, content, authorName, authorDate, authorAvatar, membersOnly, color }) => {
   return (
-    <div className="border border-gray-400 bg-white rounded-xl flex flex-col justify-between">
-      <img src={imageSrc} alt="Card" className="w-full mb-3 rounded-xl" />
+    <div className="border border-gray-400 bg-white rounded-xl flex flex-col justify-between hover:scale-105 duration-300">
+      <Image 
+      src={imageSrc} 
+      alt="Card" 
+      width={500}
+      height={500}
+      className="w-full mb-3 rounded-xl"
+       />
       <div className="p-4 pt-2">
         <div className="mb-8">
           {
@@ -63,12 +70,13 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, content, authorName, autho
 
 interface CardListProps {
   data: CardProps[];
+  buttonRender : boolean
 }
 
-const CardList: React.FC<CardListProps> = ({ data }) => {
+const CardList: React.FC<CardListProps> = ({ data, buttonRender }) => {
   return (
-    <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-      <h1 className='text-4xl font-extrabold text-google-green p-12 text-center mb-12'>
+    <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 md:mt-4 mt-12">
+      <h1 className='text-3xl md:text-4xl font-extrabold text-google-green md:p-12 text-center mb-12'>
         Upcoming Events
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
@@ -76,11 +84,15 @@ const CardList: React.FC<CardListProps> = ({ data }) => {
           <Card key={index} {...item} />
         ))}
       </div>
-      <div className="flex justify-center mt-12">
+      {
+        buttonRender && (
+          <div className="flex justify-center mt-12">
         <Link href="/events">
-        <button className="bg-google-blue text-white font-bold py-2 px-4 rounded mb-6 mb-2">View all</button>
+        <button className="bg-google-blue text-white font-bold py-2 px-4 rounded mb-6 hover:bg-blue-700">View all</button>
         </Link>
       </div>
+        )
+      }
     </div>
   );
 };
@@ -89,7 +101,13 @@ const CardList: React.FC<CardListProps> = ({ data }) => {
 
 
 const Event: React.FC = () => {
-  return <CardList data={cardData} />;
+  return <CardList data={cardData} buttonRender={true} />;
 };
 
 export default Event;
+
+const Event2 : React.FC = () => {
+  return <CardList data={cardData} buttonRender={false} />;
+};
+
+export {Event2}

@@ -7,8 +7,8 @@ export const navigation = [
     },
     {
       label: "1",
-      title: "Event",
-      route: "/event",
+      title: "Events",
+      route: "/events",
     },
     {
       label: "2",
@@ -29,10 +29,10 @@ interface PartnerProps {
     alt: string;
   }
 export const partnersData: PartnerProps[] = [
-    { id: 1, image: '/github.svg', alt: 'Partner 1' },
-    { id: 2, image: '/facebook.svg', alt: 'Partner 2' },
-    { id: 3, image: '/linkedin.svg', alt: 'Partner 3' },
-    { id: 4, image: '/twitter.svg', alt: 'Partner 4' },
+    { id: 1, image: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/gdg%20indore.png', alt: 'Partner 1' },
+    { id: 2, image: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/download%20%283%29_3HE9SvO.png', alt: 'Partner 2' },
+    { id: 3, image: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/MDD%20logo.jpeg', alt: 'Partner 3' },
+    { id: 4, image: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/IMG-20230907-WA0003.jpg', alt: 'Partner 4' },
   ]
 
   //for upcoming events
@@ -51,7 +51,7 @@ export const partnersData: PartnerProps[] = [
   export const cardData: CardProps[] = [
     {
       imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/Screenshot%202024-05-01%20183526.png',
-      title: 'Can coffee make you a better developer?',
+      title: 'Build with AI Workshop',
       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
       authorName: 'Faculty Advisor',
       authorDate: '2024',
@@ -61,7 +61,7 @@ export const partnersData: PartnerProps[] = [
     },
     {
       imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/contentbuilder/GDG-Bevy-EventThumbnail.png',
-      title: 'Can coffee make you a better developer?',
+      title: 'Data and AI Nexus 3.0',
       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
       authorName: 'Lead',
       authorDate: '2024',
@@ -71,7 +71,7 @@ export const partnersData: PartnerProps[] = [
     },
     {
       imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/event_type_logos/Screenshot_2023-01-02_at_10.18.12_AM_mGpw3xV_kJOQVUu_ei79VQF_Hqy4HB8_ix_eODZlzg.png',
-      title: 'Can coffee make you a better developer?',
+      title: 'ML Study Jam - Informative Session',
       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
       authorName: 'Foster',
       authorDate: '2024',

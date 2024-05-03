@@ -1,4 +1,4 @@
-import './faq.css'
+import './faq.scss'
 import React, { useState } from 'react';
 
  function Faq() {

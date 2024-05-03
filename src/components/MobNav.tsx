@@ -12,7 +12,7 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { navigation } from '../../constant/index';
 import Hamburger from '../../public/hamburger.svg';
-import logo from '../../public/next.svg';
+import logo from '../../public/google-developers-seeklogo.svg';
 
 function MobNav() {
   const pathname = usePathname();
