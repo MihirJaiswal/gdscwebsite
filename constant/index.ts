@@ -35,7 +35,7 @@ export const partnersData: PartnerProps[] = [
     { id: 4, image: '/twitter.svg', alt: 'Partner 4' },
   ]
 
-  //for featured events on homepage
+  //for upcoming events
 
   interface CardProps {
     imageSrc: string;
@@ -44,16 +44,40 @@ export const partnersData: PartnerProps[] = [
     authorName: string;
     authorDate: string;
     authorAvatar: string;
+    membersOnly?: boolean;
+    color?: string;
   }
   
   export const cardData: CardProps[] = [
     {
-      imageSrc: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/Screenshot%202024-05-01%20183526.png',
       title: 'Can coffee make you a better developer?',
       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
-      authorName: 'Jonathan Reinink',
-      authorDate: 'Aug 18',
-      authorAvatar: 'https://tailwindcss.com/img/jonathan.jpg',
+      authorName: 'Faculty Advisor',
+      authorDate: '2024',
+      authorAvatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4YEP4gQqE1zGteIRZeO_-LYJpBKRD3eToft5WmboUw&s',
+      membersOnly: true,
+      color: 'text-red-600',
+    },
+    {
+      imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/contentbuilder/GDG-Bevy-EventThumbnail.png',
+      title: 'Can coffee make you a better developer?',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      authorName: 'Lead',
+      authorDate: '2024',
+      authorAvatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4YEP4gQqE1zGteIRZeO_-LYJpBKRD3eToft5WmboUw&s',
+      membersOnly: true,
+      color: 'text-green-600',
+    },
+    {
+      imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/event_type_logos/Screenshot_2023-01-02_at_10.18.12_AM_mGpw3xV_kJOQVUu_ei79VQF_Hqy4HB8_ix_eODZlzg.png',
+      title: 'Can coffee make you a better developer?',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      authorName: 'Foster',
+      authorDate: '2024',
+      authorAvatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi4YEP4gQqE1zGteIRZeO_-LYJpBKRD3eToft5WmboUw&s',
+      membersOnly: false,
+      color: 'text-blue-600',
     },
   
   ];

@@ -1,5 +1,7 @@
 import React from 'react';
 import { cardData } from '../../constant/index';
+import Link from 'next/link';
+
 
 interface CardProps {
   imageSrc: string;
@@ -8,15 +10,19 @@ interface CardProps {
   authorName: string;
   authorDate: string;
   authorAvatar: string;
+  membersOnly?: boolean;
+  color?: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, title, content, authorName, authorDate, authorAvatar }) => {
+const Card: React.FC<CardProps> = ({ imageSrc, title, content, authorName, authorDate, authorAvatar, membersOnly, color }) => {
   return (
-    <div className="border border-gray-400 bg-white rounded-lg flex flex-col justify-between">
-      <img src={imageSrc} alt="Card" className="w-full mb-3" />
+    <div className="border border-gray-400 bg-white rounded-xl flex flex-col justify-between">
+      <img src={imageSrc} alt="Card" className="w-full mb-3 rounded-xl" />
       <div className="p-4 pt-2">
         <div className="mb-8">
-          <p className="text-sm text-gray-600 flex items-center">
+          {
+            membersOnly && (
+              <p className="text-sm text-gray-600 flex items-center">
             <svg
               className="fill-current text-gray-500 w-3 h-3 mr-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -28,14 +34,20 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, content, authorName, autho
             </svg>
             Members only
           </p>
-          <a href="#" className="text-gray-900 font-bold text-lg mb-2 hover:text-indigo-600 inline-block">
+            )
+          }
+          
+          <a href="#" className={`${color} font-bold text-lg mb-2 hover:text-indigo-600 inline-block`}>
             {title}
           </a>
           <p className="text-gray-700 text-sm">{content}</p>
         </div>
         <div className="flex items-center">
           <a href="#">
-            <img className="w-10 h-10 rounded-full mr-4" src={authorAvatar} alt={`Avatar of ${authorName}`} />
+            <img
+             className="w-10 h-10 rounded-full mr-4 " 
+             src={authorAvatar} 
+             alt={`Avatar of ${authorName}`} />
           </a>
           <div className="text-sm">
             <a href="#" className="text-gray-900 font-semibold leading-none hover:text-indigo-600">
@@ -56,10 +68,18 @@ interface CardListProps {
 const CardList: React.FC<CardListProps> = ({ data }) => {
   return (
     <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+      <h1 className='text-4xl font-extrabold text-google-green p-12 text-center mb-12'>
+        Upcoming Events
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
         {data.map((item, index) => (
           <Card key={index} {...item} />
         ))}
+      </div>
+      <div className="flex justify-center mt-12">
+        <Link href="/events">
+        <button className="bg-google-blue text-white font-bold py-2 px-4 rounded mb-6 mb-2">View all</button>
+        </Link>
       </div>
     </div>
   );
