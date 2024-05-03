@@ -3,31 +3,102 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --google-cream-gray-shade: #e6e6dc;
+  --google-blue: #4285f4;
+  --google-red: #e94335;
+  --google-yellow: #fbbc05;
+  --google-green: #34a853;
+  --google-gray-shade-9: #333333;
+  --body-text: #555555;
+  --google-gray-shade-7: #666666;
+  --google-gray-shade-5: #999999;
+  --google-med-lite-green: #7bd0a9;
+  --google-gray-shade-10: #1a1a1a;
+  --google-med-lite-red: #ed9c98;
+  --google-dark-blue: #185abc;
+  --google-dark-red: #b31412;
+  --google-dark-yellow: #ea8600;
+  --google-gray-shade-1: #f2f2f2;
+  --google-med-lite-blue: #9fc2ff;
+  --google-gray-shade-6: #808080;
+  --google-med-lite-yellow: #ffe167;
+  --google-gray-shade-4: #b2b2b2;
+  --google-dark-green: #137333;
+  --google-light-blue: #d2e3fc;
+  --google-light-green: #ceead6;
+  --google-med-blue: #77a7fb;
+  --google-med-red: #e57368;
+  --google-med-yellow: #fbcb43;
+  --google-med-green: #34b67a;
+  --google-gray-shade-2: #e6e6e6;
+  --google-gray-shade-3: #cccccc;
+  --google-gray-shade-8: #4d4d4d;
+  --nav-inactive-color: #707070;
+  --heading-color: #3c4043;
+  --text-color: #5f6368;
+  --button-shadow-color: #b3b3b3;
+  --shadow: #43a047;
+  --scrollbarBG: #eee;
+  --thumbBG: #66bb6a;
+  --border-color: #dadce0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background: var(--google-gray-shade-2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--google-blue);
+  box-shadow:
+    0 -100vh 0 100vh var(--google-yellow),
+    0 0 15px 5px black;
+}
+.scroll-to-top-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s, visibility 0.3s;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.scroll-to-top-button.visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+.scroll-to-top-button button {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+  text-align: center;
+	cursor: pointer;
+	outline: none;
+}
+
+.scroll-to-top-button button:hover {
+	background-color: #0056b3;
+}
+
+.fade-in {
+	animation: fade-in-animation 0.2s;
+}
+
+@keyframes fade-in-animation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
