@@ -81,3 +81,73 @@ export const partnersData: PartnerProps[] = [
     },
   
   ];
+
+  //for past events
+  
+  interface PastProps {
+    imageSrc: string;
+    title: string;
+    content: string;
+    date: string;
+    color?: string;
+  }
+  
+  export const PastData: PastProps[] = [
+    {
+      imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/event_type_logos/Screenshot_2023-01-02_at_10.18.12_AM_mGpw3xV_kJOQVUu_ei79VQF_Hqy4HB8_ix_eODZlzg.png',
+      title: 'Info session ',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      date: '2024',
+      color: 'text-blue-600',
+    },
+    {
+      imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/Purple%20and%20Yellow%20Modern%20Online%20Event%20Instagram%20Post%20%281%29.png',
+      title: 'GSoC Connect',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      date: '2024',
+      color: 'text-blue-600',
+    },
+    {
+      imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/nivesh_Wh97jfv.png',
+      title: 'Flutter Fun',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      date: '2024',
+      color: 'text-blue-600',
+    },
+    {
+      imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/%28For%20Bevy%29%20solutionchallenge-2022-EventThumbnail_oSBXFzI_OSGKhiA.png',
+      title: 'Solution Challenge Info sesion',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+     date: '2024',
+      color: 'text-blue-600',
+    },
+    {
+      imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/Link2Git%20Session.jpg',
+      title: 'Link2Git',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      date: '2024',
+      color: 'text-blue-600',
+    },
+    {
+      imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/Backpacking%20India%20Poster.jpg',
+      title: 'Backpacking India',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      date: '2024',
+      color: 'text-blue-600',
+    },
+    {
+      imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/Copy%20of%20Blue%20Futuristic%20IT%20Event%20Zoom%20Virtual%20Background.png',
+      title: 'Indore Blockchain Days',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      date: '2024',
+      color: 'text-blue-600',
+    },
+    {
+      imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/Add%20a%20heading_rIly6bE.png',
+      title: 'Google cloud study jams',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
+      date: '2024',
+      color: 'text-blue-600',
+    },
+  
+  ];
