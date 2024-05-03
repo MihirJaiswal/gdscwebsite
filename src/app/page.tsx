@@ -1,6 +1,7 @@
 'use client';
 import AboutCommunity from "@/components/AboutCommunity";
 import Collab from "@/components/Collab";
+import Event from "@/components/Events";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/Gototop";
 import Header from "@/components/Header";
@@ -33,6 +34,7 @@ export default function Home() {
       <Partners/>
       <Boxes/>
       <AboutCommunity/>
+      <Event/>
       <Collab/>
       <Faq/> 
       <Footer/>
