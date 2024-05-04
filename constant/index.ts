@@ -151,3 +151,76 @@ export const partnersData: PartnerProps[] = [
     },
   
   ];
+
+
+
+
+  //team data
+
+  export interface Member {
+    photo: string;
+    name: string;
+    jobTitle: string;
+    department: string;
+    introduction: string;
+    instagram: string;
+    github: string;
+    linkedin: string;
+}
+
+export const data: {
+  [key: string]: {
+      members: Array<Member>;
+  };
+} = {
+  "2023-2024": {
+      members: [
+          {
+              photo: ``,
+              name: "Aryan ",
+              jobTitle: "",
+              department: "",
+              introduction: "",
+              instagram: "",
+              github: "",
+              linkedin: "",
+          },
+          {
+              photo: ``,
+              name: "Mihir",
+              jobTitle: "",
+              department: "",
+              introduction: "",
+              instagram: "",
+              github: "",
+              linkedin: "",
+          },
+          
+      ],
+  },
+  "2022-2023": {
+      members: [
+          {
+              photo: ``,
+              name: "Mohit",
+              jobTitle: "",
+              department: "",
+              introduction: "",
+              instagram: "",
+              github: "",
+              linkedin: "",
+          },
+          {
+              photo: ``,
+              name: "simran",
+              jobTitle: "",
+              department: "",
+              introduction: "",
+              instagram: "",
+              github: "",
+              linkedin: "",
+          },
+        
+      ],
+  },
+};
