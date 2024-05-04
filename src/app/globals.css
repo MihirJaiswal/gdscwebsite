@@ -56,8 +56,8 @@ html {
 ::-webkit-scrollbar-thumb {
   background-color: var(--google-blue);
   box-shadow:
-    0 -100vh 0 100vh var(--google-yellow),
-    0 0 15px 5px black;
+  0 -100vh 0 100vh var(--google-yellow)
+  0 0 15px 5px black;
 }
 .scroll-to-top-button {
 	position: fixed;
