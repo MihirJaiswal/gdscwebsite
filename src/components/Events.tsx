@@ -1,8 +1,8 @@
+import { motion } from "framer-motion";
 import React from 'react';
 import { cardData } from '../../constant/index';
 import Link from 'next/link';
 import Image from 'next/image';
-
 
 interface CardProps {
   imageSrc: string;
@@ -17,30 +17,33 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imageSrc, title, content, authorName, authorDate, authorAvatar, membersOnly, color }) => {
   return (
-    <div className="border border-gray-400 bg-white rounded-xl flex flex-col justify-between hover:scale-105 duration-300">
+    <motion.div 
+      className="border border-gray-400 bg-white rounded-xl flex flex-col justify-between hover:scale-105 duration-300"
+      whileHover={{ scale: 1.05 }}
+    >
       <Image 
-      src={imageSrc} 
-      alt="Card" 
-      width={500}
-      height={500}
-      className="w-full mb-3 rounded-xl"
-       />
+        src={imageSrc} 
+        alt="Card" 
+        width={500}
+        height={500}
+        className="w-full mb-3 rounded-xl"
+      />
       <div className="p-4 pt-2">
         <div className="mb-8">
           {
             membersOnly && (
               <p className="text-sm text-gray-600 flex items-center">
-            <svg
-              className="fill-current text-gray-500 w-3 h-3 mr-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"
-              ></path>
-            </svg>
-            Members only
-          </p>
+                <svg
+                  className="fill-current text-gray-500 w-3 h-3 mr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M4 8V6a6 6 0 1 1 12 0v2h1a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8c0-1.1.9-2 2-2h1zm5 6.73V17h2v-2.27a2 2 0 1 0-2 0zM7 6v2h6V6a3 3 0 0 0-6 0z"
+                  ></path>
+                </svg>
+                Members only
+              </p>
             )
           }
           
@@ -52,9 +55,10 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, content, authorName, autho
         <div className="flex items-center">
           <a href="#">
             <img
-             className="w-10 h-10 rounded-full mr-4 " 
-             src={authorAvatar} 
-             alt={`Avatar of ${authorName}`} />
+              className="w-10 h-10 rounded-full mr-4 " 
+              src={authorAvatar} 
+              alt={`Avatar of ${authorName}`} 
+            />
           </a>
           <div className="text-sm">
             <a href="#" className="text-gray-900 font-semibold leading-none hover:text-indigo-600">
@@ -64,7 +68,7 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, content, authorName, autho
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -87,18 +91,21 @@ const CardList: React.FC<CardListProps> = ({ data, buttonRender }) => {
       {
         buttonRender && (
           <div className="flex justify-center mt-12">
-        <Link href="/events">
-        <button className="bg-google-blue text-white font-bold py-2 px-4 rounded mb-6 hover:bg-blue-700">View all</button>
-        </Link>
-      </div>
+            <Link href="/events">
+              <motion.button
+                className="bg-google-blue text-white font-bold py-2 px-4 rounded mb-6 hover:bg-blue-700"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                View all
+              </motion.button>
+            </Link>
+          </div>
         )
       }
     </div>
   );
 };
-
-
-
 
 const Event: React.FC = () => {
   return <CardList data={cardData} buttonRender={true} />;
@@ -110,4 +117,4 @@ const Event2 : React.FC = () => {
   return <CardList data={cardData} buttonRender={false} />;
 };
 
-export {Event2}
+export { Event2 };
