@@ -12,7 +12,7 @@ const AboutCommunity = () => {
           className="md:order-1 md:mr-4 flex flex-col items-center"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
         >
           <Image src={cdgi} alt="College Image" width={600} height={1000} className="mt-6" />
         </motion.div>
@@ -21,7 +21,7 @@ const AboutCommunity = () => {
           className="md:order-2 md:ml-4"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
         >
           <h1 className="text-2xl font-bold text-center md:text-3xl md:text-left md:px-6 md:font-semibold mb-4 pt-6">
             About <span className="inline-block"><Image src={logo} width={40} className="h-6 hidden md:block" alt="LOGO" /></span> GDSC CDGI

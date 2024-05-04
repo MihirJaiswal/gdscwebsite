@@ -1,10 +1,17 @@
+'use client';
 import React from 'react';
+import { motion } from 'framer-motion';
 import img from '../../public/contact.png'
 import Image from 'next/image';
 
 const Contact = () => {
   return (
-    <div className="p-8 mt-24 h-[55vh]">
+    <motion.div 
+      className="p-8 mt-24 h-[55vh]"
+      initial={{ opacity: 0, y: -50 }}
+      whileInView={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.5 }} 
+    >
       <h2 className="container text-xl font-bold text-gray-700">
         <span className="text-blue-500">Contact</span> GDSC CDGI
       </h2>
@@ -23,11 +30,12 @@ const Contact = () => {
           </b>
         </p>
         <Image
-        src={img}
-        alt="unimportant"
-         className="w-17%" />
+          src={img}
+          alt="unimportant"
+          className="w-17%"
+        />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

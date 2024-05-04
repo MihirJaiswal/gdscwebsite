@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../public/next.svg";
+import logo from "../../public/GDSC Logo.jpg";
 import heroImage from "../../public/hero.gif";
 
 function Hero() {

@@ -28,7 +28,7 @@ export default function Home() {
     {loading ? (
       <Loader/>
     ) : (
-      <>
+      <div className="overflow-x-hidden">
       <Header/>
       <Hero/>
       <Partners/>
@@ -39,7 +39,7 @@ export default function Home() {
       <Faq/> 
       <Footer/>
       <ScrollToTopButton/>
-    </>
+    </div>
     )}
     </div>
   );

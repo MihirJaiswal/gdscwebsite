@@ -11,7 +11,7 @@ function Boxes() {
         whileTap={{ scale: 0.95 }}
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.8 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         <div className="stats">
           <p className=" text-4xl text-white font-semibold">40+</p>
@@ -35,7 +35,7 @@ function Boxes() {
         whileTap={{ scale: 0.95 }}
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.5, delay: 0.8 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         <p className="font-bold  text-white text-2xl md:text-4xl lg:text-5xl tracking-wide">
           Love to chat about anything
