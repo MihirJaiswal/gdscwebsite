@@ -23,7 +23,7 @@ export default function MemberPhotoWall(): React.ReactElement {
   }, [photoIndex]);
 
   return (
-    <div className="photo-wall mb-12 md:mb-2 md:p-12">
+    <div className="photo-wall mb-12 md:mb-2 md:py-6">
       <div className="banner">
         <Image
          src={memberImgs[photoIndex - 1]} 

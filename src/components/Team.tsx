@@ -37,10 +37,10 @@ export default function TeamMember(): ReactElement {
                         onMouseLeave={() => setSelectedCardIndex(-1)}
                     >
                         <Image
-                            className="px-4 "
+                            className="px-4 w-[40%]"
                             src={member.photo}
-                            width={180}
-                            height={180}
+                            width={120 }
+                            height={120}
                             alt="ERROR"
                         />
                         <div className="flex flex-col w-[60%] h-[70%] justify-around p-2 ">
