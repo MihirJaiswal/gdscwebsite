@@ -195,7 +195,7 @@ export const data: {
   "2023-2024": {
       members: [
             {
-              photo: ``,
+              photo: `https://i.postimg.cc/0ydbjsKN/Professional-Pic-Aryan-Chachra.jpg`,
               name: "Aryan Chachra",
               jobTitle: "Lead",
               introduction: "Hi! I'm Aryan Chachra, a Flutter developer and the lead of the Google Developer Student Club at my college. I love building innovative apps and have a passion for aviation. When I'm not coding, I enjoy planespotting and keeping up with the latest in flight. Feel free to reach out—I’m always open to new ideas and collaborations!",
@@ -204,7 +204,7 @@ export const data: {
               linkedin: "https://www.linkedin.com/in/aryan-chachra-519927232/",
           },
           {
-              photo: ``,
+              photo: `https://i.postimg.cc/W167MzHL/1672583376862-Sourabh-Pawar-1.jpg`,
               name: "Sourabh Pawar",
               jobTitle: "Executive Member",
               introduction: "I am Sourabh Pawar, currently pursuing B.Tech in Computer Science and Information Technology. My passion lies in technology, particularly in the field of machine learning. As an intermediate level developer in this domain, I'm constantly exploring new avenues to enhance my skills and contribute meaningfully to the tech community.",
@@ -224,7 +224,7 @@ export const data: {
               linkedin: "https://www.linkedin.com/in/ambika-mishra-034169286",
           },
           {
-              photo: ``,
+              photo: `https://i.postimg.cc/7LKh1nV8/IMG-20240214-191714-Aakash-Benarjee.jpg`,
               name: "Aakash Benarjee ",
               jobTitle: "Insider - Social Media",
               introduction: "Executive member  @Google DSC  || persuing bachelor's from CDGI || [C++ DSA] || Web development enthusiast ||",
@@ -233,7 +233,7 @@ export const data: {
               linkedin: "https://www.linkedin.com/in/aakash-benarjee-587049252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           },
           {
-              photo: ``,
+              photo: `https://i.postimg.cc/15Fgx69w/IMG-20231007-104505-Gunjan-Rathore.jpg`,
               name: "Gunjan Rathore",
               jobTitle: "Executive Member",
               introduction: "Enthusiastic BTech-CSE 2nd year currently honing my skills in Data Structures and Algorithms using C++.",
