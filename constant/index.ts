@@ -152,6 +152,26 @@ export const partnersData: PartnerProps[] = [
   
   ];
 
+  //FAQ section
+  export const faqdata=[
+    {
+        question: 'What is Google Developer Student Club',
+        answer: ' GDSC is a community of student developers who are passionate about Google technologies. It organize events, workshops and seminars to foster learning.'
+    },
+    {
+         question: 'Who should join this club?',
+         answer: ' College and university students are encouraged to join Google Developer Student Clubs.'
+    },
+    {
+      question: 'Do I need prior coding experience for GDSC? ',
+      answer: 'No, prior coding experience is not needed. GDSC is open to all, including beginners. '  
+    },
+    {
+        question: 'What kind of events does GDSC organize?',
+        answer: 'GDSC host a variety of events, including coding workshops, hackathons, seminars, and networking events.'
+    }
+]
+
 
 
 
@@ -207,13 +227,13 @@ export const data: {
           },
           {
               photo: ``,
-              name: "Abhishek Kumar",
-              jobTitle: "Insider - Social Media",
+              name: "Arpita Verma",
+              jobTitle: "",
               department: "",
-              introduction: "Executive member  @Google DSC  || persuingBachelor's from CDGI || [C++ DSA] || Web development enthusiast ||",
-              instagram: "https://www.instagram.com/aakash._.benarjee._?igsh=Y2lyaTZ3ajBneW5t",
-              github: "https://github.com/AakashCpp",
-              linkedin: "https://www.linkedin.com/in/aakash-benarjee-587049252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+              introduction: "",
+              instagram: "",
+              github: "",
+              linkedin: "",
           }
           
       ],

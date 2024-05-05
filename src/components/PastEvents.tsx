@@ -25,8 +25,8 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, date, content, color }) =>
         <Image 
           src={imageSrc} 
           alt="Card" 
-          width={400}
-          height={400}
+          width={300}
+          height={300}
           className="w-full mb-3 rounded-full border border-gray-500"
         />
       </div>
