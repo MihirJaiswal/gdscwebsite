@@ -32,13 +32,15 @@ export default function TeamMember(): ReactElement {
                 {data[selectedYear].members.map((member, key) => (
                     <div 
                         key={key} 
-                        className={`flex w-[35rem] h-[min(21.5rem,50vw)] items-center justify-between rounded-[20px] border-b-4 shadow-md ${key % 3 === 0 ? 'border-b-5 border-google-red' : key % 3 === 1 ? 'border-b-5 border-google-green' : 'border-b-5 border-google-yellow'} hover:border-[5px] hover:border-[#ea4336|#34a852|#faab00] transition duration-300 `}
+                        className={`flex w-[35rem] h-[min(21.5rem,50vw)] items-center justify-center gap-6 rounded-[20px] border-b-4 shadow-md ${key % 3 === 0 ? 'border-b-5 border-google-red' : key % 3 === 1 ? 'border-b-5 border-google-green' : 'border-b-5 border-google-yellow'} hover:border-[5px] hover:border-[#ea4336|#34a852|#faab00] transition duration-300 `}
                         onMouseEnter={() => setSelectedCardIndex(key)}
                         onMouseLeave={() => setSelectedCardIndex(-1)}
                     >
-                        <img
-                            className="w-[32.5%] h-[60%]"
+                        <Image
+                            className="px-4 "
                             src={member.photo}
+                            width={180}
+                            height={180}
                             alt="ERROR"
                         />
                         <div className="flex flex-col w-[60%] h-[70%] justify-around p-2 ">

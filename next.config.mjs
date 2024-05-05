@@ -4,6 +4,9 @@ const nextConfig = {
       {
         hostname: 'res.cloudinary.com',
       },
+      {
+        hostname: 'i.postimg.cc',
+      },
     ],
   },
 };

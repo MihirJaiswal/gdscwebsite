@@ -181,7 +181,6 @@ export const partnersData: PartnerProps[] = [
     photo: string;
     name: string;
     jobTitle: string;
-    department: string;
     introduction: string;
     instagram: string;
     github: string;
@@ -195,21 +194,30 @@ export const data: {
 } = {
   "2023-2024": {
       members: [
+            {
+              photo: ``,
+              name: "Aryan Chachra",
+              jobTitle: "Lead",
+              introduction: "Hi! I'm Aryan Chachra, a Flutter developer and the lead of the Google Developer Student Club at my college. I love building innovative apps and have a passion for aviation. When I'm not coding, I enjoy planespotting and keeping up with the latest in flight. Feel free to reach out—I’m always open to new ideas and collaborations!",
+              instagram: "https://www.instagram.com/aryanchachra14/",
+              github: "https://github.com/AryanChachra",
+              linkedin: "https://www.linkedin.com/in/aryan-chachra-519927232/",
+          },
           {
               photo: ``,
               name: "Sourabh Pawar",
               jobTitle: "Executive Member",
-              department: "",
               introduction: "I am Sourabh Pawar, currently pursuing B.Tech in Computer Science and Information Technology. My passion lies in technology, particularly in the field of machine learning. As an intermediate level developer in this domain, I'm constantly exploring new avenues to enhance my skills and contribute meaningfully to the tech community.",
               instagram: "https://www.instagram.com/_sourabh_4896?igsh=Y3BnN3RwZ2RwcXI=",
               github: "https://github.com/Sourabh4896",
               linkedin: "https://www.linkedin.com/in/sourabh-pawar-02a18724b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
           },
           {
-              photo: ``,
+              photo: `
+              https://i.postimg.cc/SQ3qpvst/IMG-20230922-WA0012-Ambika-Mishra.jpg
+              `,
               name: "Ambika Mishra ",
               jobTitle: "Executive Member",
-              department: "",
               introduction: "Hello, I'm Ambika Mishra, currently in my second year of B.Tech in Computer Science and Engineering. Proficient in languages like C, C++, Java and Data Structure & Algorithm(DSA). I also have a keen interest in frontend development. As a data analysis enthusiast, I'm passionate about exploring insights and patterns within datasets",
               instagram: "https://instagram.com/mishra_am_27",
               github: "https://github.com/ambikagettech",
@@ -219,7 +227,6 @@ export const data: {
               photo: ``,
               name: "Aakash Benarjee ",
               jobTitle: "Insider - Social Media",
-              department: "",
               introduction: "Executive member  @Google DSC  || persuing bachelor's from CDGI || [C++ DSA] || Web development enthusiast ||",
               instagram: "https://www.instagram.com/aakash._.benarjee._?igsh=Y2lyaTZ3ajBneW5t",
               github: "https://github.com/AakashCpp",
@@ -227,13 +234,12 @@ export const data: {
           },
           {
               photo: ``,
-              name: "Arpita Verma",
-              jobTitle: "",
-              department: "",
-              introduction: "",
-              instagram: "",
-              github: "",
-              linkedin: "",
+              name: "Gunjan Rathore",
+              jobTitle: "Executive Member",
+              introduction: "Enthusiastic BTech-CSE 2nd year currently honing my skills in Data Structures and Algorithms using C++.",
+              instagram: "https://instagram.com/gunjanrathore0011?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
+              github: "https://github.com/GunjanRathore0011",
+              linkedin: "https://www.linkedin.com/in/gunjan-rathore-a00261252",
           }
           
       ],
@@ -244,7 +250,6 @@ export const data: {
               photo: ``,
               name: "Mohit",
               jobTitle: "",
-              department: "",
               introduction: "",
               instagram: "",
               github: "",
@@ -254,7 +259,6 @@ export const data: {
               photo: ``,
               name: "simran",
               jobTitle: "",
-              department: "",
               introduction: "",
               instagram: "",
               github: "",
