@@ -30,7 +30,7 @@ function Collab() {
         <p className="text-md text-google-black">
           Connect with us to make your work easier.
         </p>
-        <Link href="" target="_blank">
+        <Link href="/contact" target="_blank">
           <motion.button
             className="mt-4 px-6 py-3 bg-google-blue text-white text-md rounded-xl flex items-center active:ring-2  hover:bg-blue-500 transition-all ease-in-out font-mulish font-bold"
             whileHover={{ scale: 1.05 }}
