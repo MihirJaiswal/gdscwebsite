@@ -28,6 +28,7 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, content, authorName, autho
         width={500}
         height={500}
         className="w-full mb-3 rounded-xl"
+        loading="lazy"
       />
       <div className="p-4 pt-2">
         <div className="mb-8">

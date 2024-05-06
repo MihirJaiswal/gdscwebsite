@@ -29,6 +29,7 @@ export default function MemberPhotoWall(): React.ReactElement {
          src={memberImgs[photoIndex - 1]} 
          alt="members' photo"
          className="rounded-2xl border-2 w-[74rem] h-[7rem] md:w-full md:h-full"  
+         loading='lazy'
          />
       </div>
     </div>

@@ -14,7 +14,14 @@ const AboutCommunity = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
-          <Image src={cdgi} alt="College Image" width={600} height={1000} className="mt-6" />
+          <Image 
+          src={cdgi}
+          alt="College Image" 
+          width={600}
+          height={1000}
+          className="mt-6"
+          loading='lazy'
+          />
         </motion.div>
 
         <motion.div

@@ -26,6 +26,7 @@ function Boxes() {
             height={150}
             alt="line"
             className="scale-150"
+            loading="lazy"
           />
         </div>
       </motion.div>

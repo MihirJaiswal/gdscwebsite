@@ -34,6 +34,7 @@ const Contact = () => {
           src={img}
           alt="unimportant"
           className="w-96 py-6"
+          loading="lazy"
         />
         </div>
       </div>

@@ -225,8 +225,8 @@ export const data: {
           },
           {
               photo: `https://i.postimg.cc/7LKh1nV8/IMG-20240214-191714-Aakash-Benarjee.jpg`,
-              name: "Aakash Benarjee ",
-              jobTitle: "Insider - Social Media",
+              name: "Akash Benarjee ",
+              jobTitle: "Insider ",
               introduction: "Executive member  @Google DSC  || persuing bachelor's from CDGI || [C++ DSA] || Web development enthusiast ||",
               instagram: "https://www.instagram.com/aakash._.benarjee._?igsh=Y2lyaTZ3ajBneW5t",
               github: "https://github.com/AakashCpp",

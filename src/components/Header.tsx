@@ -18,6 +18,7 @@ const Header = () => {
             width={500}
             height={500}
             className='w-[40rem]'
+            loading='lazy'
             />
             
         </a>

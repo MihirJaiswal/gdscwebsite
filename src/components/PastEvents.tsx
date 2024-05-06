@@ -28,6 +28,7 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, date, content, color }) =>
           width={300}
           height={300}
           className="w-full mb-3 rounded-full border border-gray-500"
+          loading="lazy"
         />
       </div>
       <div className="p-4 pt-2">

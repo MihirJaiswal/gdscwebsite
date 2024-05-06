@@ -22,6 +22,7 @@ function Hero() {
             width={500}
             height={500}
             alt="heroImage"
+            loading="lazy"
           />
         </motion.div>
         <motion.p

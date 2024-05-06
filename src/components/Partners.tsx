@@ -29,6 +29,7 @@ function Partners() {
                   width={150}
                   height={150}
                   alt={partner.alt}
+                  loading='lazy'
                 />
               </a>
             </motion.div>

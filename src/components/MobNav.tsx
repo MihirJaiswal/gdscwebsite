@@ -27,6 +27,7 @@ function MobNav() {
               height={36}
               alt="hamburger"
               className="cursor-pointer sm:hidden"
+              loading="lazy"
             />
           </SheetTrigger>
           <SheetContent side="right" className="bg-white border-gray-700">
@@ -37,6 +38,7 @@ function MobNav() {
                 height={42}
                 alt="logo"
                 className="max-sm:size-10"
+                loading='lazy'
               />
               
             </Link>

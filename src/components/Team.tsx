@@ -42,6 +42,7 @@ export default function TeamMember(): ReactElement {
                             width={120 }
                             height={120}
                             alt="ERROR"
+                            loading="lazy"
                         />
                         <div className="flex flex-col w-[60%] h-[70%] justify-around p-2 ">
                             <p className="h-[10%] mb-0 font-bold md:text-xl text-md">{member.name}</p>
@@ -55,6 +56,7 @@ export default function TeamMember(): ReactElement {
                                         src={instagram}
                                         alt="ERROR"
                                         className="w-[1.3rem] h-[1.3rem] md:w-[1.75rem] md:h-[1.75rem]"
+                                        loading="lazy"
                                     />
                                 </a>
                                 <a href={member.github} target="_blank">
@@ -62,6 +64,7 @@ export default function TeamMember(): ReactElement {
                                         src={github}
                                         alt="ERROR"
                                         className="w-[1.3rem] h-[1.3rem] md:w-[1.75rem] md:h-[1.75rem]"
+                                        loading="lazy"
                                     />
                                 </a>
                                 <a href={member.linkedin} target="_blank">
@@ -69,6 +72,7 @@ export default function TeamMember(): ReactElement {
                                         src={linkedin}
                                         alt="ERROR"
                                         className="w-[1.3rem] h-[1.3rem] md:w-[1.75rem] md:h-[1.75rem]"
+                                        loading="lazy"
                                     />
                                 </a>
                             </div>
