@@ -1,14 +1,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { useRouter } from 'next/router';
 
 
 function Collab() {
-  const router = useRouter();
-  const handleClick = () => {
-    router.push('/contact');
-  };
   return (
     <motion.div
     initial={{ opacity: 0, y: -50 }}
@@ -37,14 +32,16 @@ function Collab() {
           Connect with us to make your work easier.
         </p>
         <div>
+          <Link href="/contact">
           <motion.button
             className="mt-4 px-6 py-3 bg-google-blue text-white text-md rounded-xl flex items-center active:ring-2  hover:bg-blue-500 transition-all ease-in-out font-mulish font-bold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={handleClick}
+
           >
             Get Started!
           </motion.button>
+          </Link>
         </div>
       </motion.div>
       <style jsx>{`

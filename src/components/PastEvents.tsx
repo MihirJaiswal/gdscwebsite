@@ -1,9 +1,8 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion'; 
 import { PastData } from '../../constant/index';
 import Image from 'next/image';
-
 
 interface CardProps {
   imageSrc: string;
@@ -49,6 +48,11 @@ interface CardListProps {
 }
 
 const CardList: React.FC<CardListProps> = ({ data }) => {
+  const [visibleEvents, setVisibleEvents] = useState(4);
+  const loadMore = () => {
+    setVisibleEvents(prevCount => prevCount + 4);
+  };
+
   return (
     <div className="max-w-screen-xl mx-auto p-4 md:p-2 mb-12">
       <h1 className='text-3xl md:text-5xl font-extrabold text-blue-600 md:p-12 text-center mb-12'>
@@ -60,10 +64,17 @@ const CardList: React.FC<CardListProps> = ({ data }) => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }} 
       >
-        {data.map((item, index) => (
+        {data.slice(0, visibleEvents).map((item, index) => (
           <Card key={index} {...item} />
         ))}
       </motion.div>
+      {visibleEvents < data.length && (
+        <div className="text-center mt-4">
+          <button onClick={loadMore} className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+            Load More
+          </button>
+        </div>
+      )}
     </div>
   );
 };

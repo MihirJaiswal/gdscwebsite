@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import logo from '../../public/google-developers-seeklogo.svg';
 import cdgi from '../../public/cdgi.jpg';
+import { Link } from 'lucide-react';
 
 const AboutCommunity = () => {
   return (
@@ -40,14 +41,15 @@ const AboutCommunity = () => {
             Through a combination of <span className="text-blue-600">workshops</span>, <span className="text-green-600">hackathons</span>, <span className="text-red-600">speaker sessions</span>, and <span className="text-yellow-500">hands-on projects</span>, GDSC members have the opportunity to enhance their technical skills, explore innovative ideas, and connect with like-minded peers.
           </p>
 
-          <div className="flex md:flex-row md:ml-6 justify-between items-center mt-8">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.9 }}
-              className="bg-google-red rounded-lg shadow-xl text-white font-medium py-2 px-6 mb-2 md:mb-0 max-w-max flex-shrink-0"
-            >
-              Know More!
-            </motion.button>
+          <div
+           className="flex md:flex-row md:ml-6 justify-between items-center mt-8"
+           >
+             <a
+                href="https://gdsc.community.dev/chameli-devi-group-of-institutions-indore-india/"
+                className="bg-google-red rounded-lg shadow-xl text-white cursor-pointer font-medium py-2 px-6 mb-2 md:mb-0 max-w-max flex-shrink-0"
+              >
+                Know More!
+              </a>
           </div>
         </motion.div>
       </div>

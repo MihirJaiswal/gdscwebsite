@@ -80,18 +80,13 @@ interface CardListProps {
 }
 
 const CardList: React.FC<CardListProps> = ({ data, buttonRender }) => {
-  return (
-    <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 md:mt-4 mt-20">
-      <h1 className='text-3xl md:text-4xl font-extrabold text-google-green md:p-12 text-center mb-12'>
-        Upcoming Events
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
-        {data.map((item, index) => (
-          <Card key={index} {...item} />
-        ))}
-      </div>
-      {
-        buttonRender && (
+  if (data.length === 0) {
+    return (
+      <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 md:mt-4 mt-20 text-center">
+        <h1 className='text-3xl md:text-4xl font-extrabold text-google-green md:p-12 mb-12'>
+          No Upcoming Events
+        </h1>
+        {buttonRender && (
           <div className="flex justify-center mt-12">
             <Link href="/events">
               <motion.button
@@ -103,11 +98,38 @@ const CardList: React.FC<CardListProps> = ({ data, buttonRender }) => {
               </motion.button>
             </Link>
           </div>
-        )
-      }
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 md:mt-4 mt-20">
+      <h1 className='text-3xl md:text-4xl font-extrabold text-google-green md:p-12 text-center mb-12'>
+        Upcoming Events
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+        {data.map((item, index) => (
+          <Card key={index} {...item} />
+        ))}
+      </div>
+      {buttonRender && (
+        <div className="flex justify-center mt-12">
+          <Link href="/events">
+            <motion.button
+              className="bg-google-blue text-white font-bold py-2 px-4 rounded mb-6 hover:bg-blue-700"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              View all
+            </motion.button>
+          </Link>
+        </div>
+      )}
     </div>
   );
 };
+
 
 const Event: React.FC = () => {
   return <CardList data={cardData} buttonRender={true} />;
