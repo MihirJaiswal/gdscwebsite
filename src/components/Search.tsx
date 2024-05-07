@@ -11,10 +11,24 @@ import Loader from './loader/Loader';
 const Search = () => {
   const [showWhatWeDo, setShowWhatWeDo] = useState(false);
   const [showLoader, setShowLoader] = useState(false);
+  const [typedText, setTypedText] = useState('');
+
+  const textToType = "What We Do?";
+
+  useEffect(() => {
+    let index = 0;
+    const typingInterval = setInterval(() => {
+      if (index <= textToType.length) {
+        setTypedText(textToType.substring(0, index));
+        index++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 400); 
+  }, []);
 
   const handleSearchButtonClick = () => {
     setShowLoader(true);
-    // Delay showing WhatWeDo for 2 seconds
     setTimeout(() => {
       setShowWhatWeDo(true);
       setShowLoader(false);
@@ -51,7 +65,7 @@ const Search = () => {
           className="mb-4 relative"
         >
           <div className="md:w-[50rem] w-80 p-2 md:p-4 pl-10 pr-20 bg-white border border-gray-400 rounded-full text-gray-900 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-500">
-            <h3 className="text-l font-semibold md:mx-10 mx-4">What We Do?</h3>
+            <h3 className="text-l font-semibold md:mx-10 mx-4">{typedText}</h3>
           </div>
           <span className="absolute left-3 top-1/2 transform -translate-y-1/2">
             <FaSearch className="w-5 h-5 font-light text-gray-500 m-2" />

@@ -84,7 +84,7 @@ export const partnersData: PartnerProps[] = [
   }
   
   export const cardData: CardProps[] = [
-     {
+   /*   {
       imageSrc: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/Screenshot%202024-05-01%20183526.png',
       title: 'Build with AI Workshop',
       content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.',
@@ -107,7 +107,7 @@ export const partnersData: PartnerProps[] = [
       Date: '2024',
       membersOnly: false,
       color: 'text-blue-600',
-    }, 
+    },  */
   
   ];
 
