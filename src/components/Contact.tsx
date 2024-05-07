@@ -26,7 +26,7 @@ const Contact = () => {
           Questions?{' '}
           <b>
             Please contact us at:{' '}
-            <a href="mailto:mihirjaiswal69@gmail.com" className="text-blue-500">mihirjaiswal69@gmail</a>
+            <a href="mailto:mihirjaiswal69@gmail.com" className="text-blue-500">gdsccdgi@gmail</a>
           </b>
         </p>
         <div>

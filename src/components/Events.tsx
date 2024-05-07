@@ -10,12 +10,12 @@ interface CardProps {
   imageSrc: string;
   title: string;
   content: string;
-  Date: string;
+  date: string;
   membersOnly?: boolean;
   color?: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, title, content, Date, membersOnly, color }) => {
+const Card: React.FC<CardProps> = ({ imageSrc, title, content, date, membersOnly, color }) => {
   return (
     <motion.div 
       className="border border-gray-400 bg-white rounded-xl flex flex-col justify-between hover:scale-105 duration-300"
@@ -55,7 +55,7 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, content, Date, membersOnly
         </div>
         <div className="flex items-center">
           <div className="text-sm">
-            <p className="text-gray-600">{Date}</p>
+            <p className="text-gray-600">{date}</p>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@ const CardList: React.FC<CardListProps> = ({ data, buttonRender }) => {
             alt="No Event"
             width={500}
             height={500}
-            className="w-72 md:w-96 rounded-xl"
+            className="w-72 md:w-72 rounded-xl"
             loading="lazy"
           />
           <h3 className="text-2xl text-gray-600 bg-white">No Upcoming Event</h3>
@@ -108,7 +108,7 @@ const CardList: React.FC<CardListProps> = ({ data, buttonRender }) => {
   }
 
   return (
-    <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 md:mt-4 mt-20 bg-white bg-opacity-70">
+    <div className="max-w-screen-lg mx-auto p-5 sm:p-10 md:p-16 md:mt-4 mt-20 bg-white bg-opacity-70">
       <h1 className='text-3xl md:text-4xl font-extrabold text-google-green md:p-12 text-center mb-12'>
         Upcoming Events
       </h1>
