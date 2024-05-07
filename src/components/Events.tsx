@@ -4,7 +4,7 @@ import React from 'react';
 import { cardData } from '../../constant/index';
 import Link from 'next/link';
 import Image from 'next/image';
-import img from '../../public/noevent.svg'
+import img from '../../public/noevent.png'
 
 interface CardProps {
   imageSrc: string;
@@ -79,7 +79,7 @@ const CardList: React.FC<CardListProps> = ({ data, buttonRender }) => {
         <h1 className='text-5xl font-extrabold text-google-green bg-white md:pt-12 mb-12'>
          Events
         </h1>
-        <div className="flex flex-col items-center  justify-center">
+        <div className="flex flex-col items-center gap-12 justify-center">
           <Image
             src={img}
             alt="No Event"
