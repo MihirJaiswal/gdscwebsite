@@ -10,6 +10,7 @@ import Boxes from "@/components/InfoBoxes";
 import Partners from "@/components/Partners";
 import Faq from "@/components/faq/Faq";
 import Loader from "@/components/loader/Loader";
+import Search from "@/components/Search";
 import React, { useState, useEffect } from 'react';
 
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
       <Header/>
       <Hero/>
       <Partners/>
-      <Boxes/>
+      <Search/>
       <AboutCommunity/>
       <Event/>
       <Collab/>

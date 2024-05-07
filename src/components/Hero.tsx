@@ -17,7 +17,7 @@ function Hero() {
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <Image
-            className="w-full md:w-96 rounded-full py-2 md:py-4" 
+            className="w-full md:hidden rounded-full py-2 md:py-4" 
             src={logo}
             width={600}
             height={600}
