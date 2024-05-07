@@ -12,6 +12,7 @@ import Faq from "@/components/faq/Faq";
 import Loader from "@/components/loader/Loader";
 import Search from "@/components/Search";
 import React, { useState, useEffect } from 'react';
+import Whatwedo from "@/components/Whatwedo";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

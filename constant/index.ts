@@ -19,7 +19,8 @@ export const navigation = [
       label: "3",
       title: "Contact",
       route: "/contact",
-    }
+    },
+    
   ];
 
 //for partners
@@ -34,6 +35,42 @@ export const partnersData: PartnerProps[] = [
     { id: 3, image: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/MDD%20logo.jpeg', alt: 'Partner 3' },
     { id: 4, image: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/events/IMG-20230907-WA0003.jpg', alt: 'Partner 4' },
   ]
+
+
+  //for whatwedo
+  interface WhatWeDoItem {
+    image: string;
+    title: string;
+    description: string;
+  }
+  
+  const whatData: WhatWeDoItem[] = [
+    {
+      image: '/What_we_do_Projects.svg',
+      title: 'Projects',
+      description: 'Projects with a social impact that help a large part of society.'
+    },
+    {
+      image: '/What_we_do_Seminars.svg',
+      title: 'Seminars',
+      description: 'Get updated with the latest Events and Hackathons.'
+    },
+    {
+      image: '/What_we_do_StudyJams.svg',
+      title: 'Study Jams',
+      description: 'Hands-on experience with the community members.'
+    },
+    {
+      image: '/What_we_do_Hackathons.svg',
+      title: 'Tech Talks',
+      description: 'Technical talks and discussions on various technologies.'
+    },
+  ];
+  
+  export default whatData;
+  
+
+
 
   //for upcoming events
 

@@ -7,12 +7,12 @@ import Image from 'next/image';
 const Contact = () => {
   return (
     <motion.div 
-      className="md:p-8 mt-24 h-full md:h-[53vh]"
+      className="md:p-8 mt-24 h-full md:h-[53vh] bg-white bg-opacity-60"
       initial={{ opacity: 0, y: -50 }}
       whileInView={{ opacity: 1, y: 0 }} 
       transition={{ duration: 0.5 }} 
     >
-      <h2 className="container text-xl font-bold text-gray-700 mb-4">
+      <h2 className="container text-xl font-bold text-gray-700 mb-4 ">
         <span className="text-blue-500">Contact</span> GDSC CDGI
       </h2>
       <div className="container flex flex-col md:flex-row gap-4">
