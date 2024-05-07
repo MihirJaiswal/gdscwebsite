@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/Gototop";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Boxes from "@/components/InfoBoxes";
 import Partners from "@/components/Partners";
 import Faq from "@/components/faq/Faq";
 import Loader from "@/components/loader/Loader";
@@ -20,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 5500);
+    }, 2500);
 
     return () => clearTimeout(timeout);
   }, []);
