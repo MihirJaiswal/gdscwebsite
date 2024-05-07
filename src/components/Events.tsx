@@ -4,6 +4,7 @@ import React from 'react';
 import { cardData } from '../../constant/index';
 import Link from 'next/link';
 import Image from 'next/image';
+import img from '../../public/noevent.jpg'
 
 interface CardProps {
   imageSrc: string;
@@ -82,10 +83,25 @@ interface CardListProps {
 const CardList: React.FC<CardListProps> = ({ data, buttonRender }) => {
   if (data.length === 0) {
     return (
-      <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 md:mt-4 mt-20 text-center">
-        <h1 className='text-3xl md:text-4xl font-extrabold text-google-green md:p-12 mb-12'>
-          No Upcoming Events
+      <motion.div
+       initial={{ opacity: 0, y: 50 }}
+       whileInView={{ opacity: 1, y: 0 }}
+       transition={{ duration: 0.5, delay: 0.6 }}
+       className="max-w-screen-xl mx-auto p-5 sm:p-10 md:pt-16 md:mt-4 mt-20 text-center bg-white bg-opacity-50">
+        <h1 className='text-5xl font-extrabold text-google-green bg-white md:pt-12 mb-12'>
+         Events
         </h1>
+        <div className="flex flex-col items-center gap-8 justify-center">
+          <Image
+            src={img}
+            alt="No Event"
+            width={300}
+            height={300}
+            className="w-44 md:w-52 rounded-xl"
+            loading="lazy"
+          />
+          <h3 className="text-2xl text-gray-600 bg-white">No Upcoming Event</h3>
+        </div>
         {buttonRender && (
           <div className="flex justify-center mt-12">
             <Link href="/events">
@@ -99,7 +115,7 @@ const CardList: React.FC<CardListProps> = ({ data, buttonRender }) => {
             </Link>
           </div>
         )}
-      </div>
+      </motion.div>
     );
   }
 

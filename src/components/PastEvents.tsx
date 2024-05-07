@@ -54,8 +54,8 @@ const CardList: React.FC<CardListProps> = ({ data }) => {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto p-4 md:p-2 mb-12">
-      <h1 className='text-3xl md:text-5xl font-extrabold text-blue-600 md:p-12 text-center mb-12'>
+    <div className="max-w-screen-xl mx-auto p-4 md:p-2 mb-12 bg-white bg-opacity-60">
+      <h1 className='text-3xl md:text-5xl font-extrabold text-blue-600 bg-white md:p-12 text-center mb-12'>
         Past Events
       </h1>
       <motion.div

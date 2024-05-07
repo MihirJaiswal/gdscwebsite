@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Navbar from './Navbar'
 import MobNav from './MobNav'
-import logo from '../../public/logo.svg'
+import logo from '../../public/gdsc-gif.gif'
 
 
 
@@ -17,10 +17,10 @@ const Header = () => {
             src={logo}
             width={500}
             height={500}
-            className='w-[40rem]'
+            className='h-10 w-auto'
             loading='lazy'
             />
-            
+            <h1 className='text-l text-gray-700 font-medium hidden md:block'>Google Developer Students Club</h1>
         </a>
         <div>
         <Navbar/>
