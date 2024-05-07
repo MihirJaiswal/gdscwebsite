@@ -26,7 +26,7 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, date, content, color }) =>
           alt="Card" 
           width={300}
           height={300}
-          className="w-full mb-3 rounded-full border border-gray-500"
+          className="w-56 mb-3 rounded-full border border-gray-500"
           loading="lazy"
         />
       </div>
@@ -54,7 +54,7 @@ const CardList: React.FC<CardListProps> = ({ data }) => {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto p-4 md:p-2 mb-12 bg-white bg-opacity-60">
+    <div className="max-w-screen-xl mx-auto p-12 md:p-2 mb-12 bg-white bg-opacity-70">
       <h1 className='text-3xl md:text-5xl font-extrabold text-blue-600 bg-white md:p-12 text-center mb-12'>
         Past Events
       </h1>

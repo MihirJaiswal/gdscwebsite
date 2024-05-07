@@ -10,14 +10,12 @@ interface CardProps {
   imageSrc: string;
   title: string;
   content: string;
-  authorName: string;
-  authorDate: string;
-  authorAvatar: string;
+  Date: string;
   membersOnly?: boolean;
   color?: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, title, content, authorName, authorDate, authorAvatar, membersOnly, color }) => {
+const Card: React.FC<CardProps> = ({ imageSrc, title, content, Date, membersOnly, color }) => {
   return (
     <motion.div 
       className="border border-gray-400 bg-white rounded-xl flex flex-col justify-between hover:scale-105 duration-300"
@@ -56,18 +54,8 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, content, authorName, autho
           <p className="text-gray-700 text-sm">{content}</p>
         </div>
         <div className="flex items-center">
-          <a href="#">
-            <img
-              className="w-10 h-10 rounded-full mr-4 " 
-              src={authorAvatar} 
-              alt={`Avatar of ${authorName}`} 
-            />
-          </a>
           <div className="text-sm">
-            <a href="#" className="text-gray-900 font-semibold leading-none hover:text-indigo-600">
-              {authorName}
-            </a>
-            <p className="text-gray-600">{authorDate}</p>
+            <p className="text-gray-600">{Date}</p>
           </div>
         </div>
       </div>
@@ -120,11 +108,11 @@ const CardList: React.FC<CardListProps> = ({ data, buttonRender }) => {
   }
 
   return (
-    <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 md:mt-4 mt-20">
+    <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 md:mt-4 mt-20 bg-white bg-opacity-70">
       <h1 className='text-3xl md:text-4xl font-extrabold text-google-green md:p-12 text-center mb-12'>
         Upcoming Events
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+      <div className="flex justify-center gap-24 flex-col md:flex-row">
         {data.map((item, index) => (
           <Card key={index} {...item} />
         ))}

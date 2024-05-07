@@ -11,16 +11,16 @@ function Hero() {
       <div id="about" className="relative bottom-64"></div>
       <div className="grid w-full p-10 text-justify md:p-0 md:w-1/2 place-items-start place-content-center">
         <motion.div
-          className="flex items-center justify-center p-10 md:justify-around"
+          className="flex items-center justify-center pb-4 md:justify-around"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <Image
-            className="sm:hidden"
+            className="w-full md:w-96 rounded-full py-2 md:py-4" 
             src={logo}
-            width={500}
-            height={500}
+            width={600}
+            height={600}
             alt="heroImage"
             loading="lazy"
           />
