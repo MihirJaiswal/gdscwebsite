@@ -41,6 +41,7 @@ export default function TeamMember(): ReactElement {
                             src={member.photo}
                             width={120 }
                             height={120}
+                            quality={100}
                             alt="ERROR"
                             loading="lazy"
                         />
